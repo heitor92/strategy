@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Exemplo Strategy
+ * 
+ */
 namespace SON\Db\QueryBuilder;
 
 class MySql implements Strategy
