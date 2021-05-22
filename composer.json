@@ -12,7 +12,8 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "SON\\Db\\": "src"
+            "SON\\Db\\": "src",
+            "App\\": "app"
         }
     }
 }
