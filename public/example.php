@@ -19,10 +19,19 @@ $director = new \SON\Db\Builder\UserDirector($builder);
 
 //var_dump($sql);
 
-$pdo = new \PDO('mysql:host=design-patterns_db_1;dbname=teste', 'root', '1234');
+//$pdo = new \PDO('mysql:host=design-patterns_db_1;dbname=teste', 'root', '1234');
 
-$db = new \SON\Db\Db($pdo);
+//$db = new \SON\Db\Db($pdo);
+//$db->setDirector($director);
+//$data = $db->getAll()->execute();
+$config = [
+    'dsn' => 'mysql:host=design-patterns_db_1;dbname=teste',
+    'user' => 'root',
+    'passwd' => '1234'
+];
+
+$db = \SON\Db\DbSingleton::configure($config);
+$db = \SON\Db\DbSingleton::getInstance();
 $db->setDirector($director);
 $data = $db->getAll()->execute();
-
 var_dump($data->fetchAll());
