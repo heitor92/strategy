@@ -1,3 +1,4 @@
 <?php 
 
-echo "Eu sou foda! kkk. brincadeira";
+require __DIR__ . '/../bootstrap.php';
+require __DIR__ . '/../run.php';

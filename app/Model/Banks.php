@@ -5,9 +5,9 @@
  */
 namespace App\Model;
 
-use SON\Db\Builder\ModelAbstract;
+use SON\Db\Builder\DirectorAbstract;
 
-class Banks extends ModelAbstract
+class Banks extends DirectorAbstract
 {
     //protected $table = 'bank_activated';
 }

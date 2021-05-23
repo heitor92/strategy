@@ -6,7 +6,7 @@
 namespace SON\Db\Builder;
 
 
-abstract class ModelAbstract implements DirectorInterface
+abstract class DirectorAbstract implements DirectorInterface
 {
     protected $builder;
     protected $table;
